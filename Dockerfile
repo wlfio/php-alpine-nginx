@@ -1,4 +1,4 @@
-FROM alpine:3.10.2
+FROM alpine:3.10.3
 LABEL Maintainer="Wolfgang von Caron <wolfgang@wlf.io>" \
     Description="Based on Tim de Pater <code@trafex.nl>'s Lightweight container with Nginx 1.14 & PHP-FPM 7.2 based on Alpine Linux."
 
@@ -17,6 +17,7 @@ RUN apk --no-cache add \
     php7-fpm \
     php7-ftp \
     php7-gd \
+    php7-gmp \
     php7-imagick \
     php7-intl \
     php7-json \
