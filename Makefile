@@ -33,7 +33,6 @@ push-to-repo:
 	docker push $(REPO)/$(PROJECT):commit_$(GIT_SHORT_COMMIT)
 	docker push $(REPO)/$(PROJECT):branch_$(GIT_BRANCH)
 	docker push $(REPO)/$(PROJECT):build_$(BUILD_NUMBER)
-	docker push $(REPO)/$(PROJECT):latest
 
 tag:
 	echo "-------------------------------------------------------"
@@ -43,7 +42,6 @@ tag:
 	docker tag $(REPO)/$(PROJECT):build 	$(REPO)/$(PROJECT):commit_$(GIT_SHORT_COMMIT)
 	docker tag $(REPO)/$(PROJECT):build 	$(REPO)/$(PROJECT):branch_$(GIT_BRANCH)
 	docker tag $(REPO)/$(PROJECT):build 	$(REPO)/$(PROJECT):build_$(BUILD_NUMBER)
-	docker tag $(REPO)/$(PROJECT):build 	$(REPO)/$(PROJECT):latest
 	echo "-------------------------------------------------------"
 	echo "-------------------------------------------------------"
 
