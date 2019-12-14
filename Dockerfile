@@ -44,7 +44,8 @@ RUN apk --no-cache add \
     nano \
     jq \
     curl \
-    make
+    make \
+    xmlstarlet
 
 # Configure nginx
 COPY alpine/nginx.conf /etc/nginx/nginx.conf
